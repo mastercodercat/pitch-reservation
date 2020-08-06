@@ -30,7 +30,7 @@ ENV.each_key do |key|
 end
 
 # Log to stdout
-set :output, "/var/log/cron.log"
+set :output, "/proc/1/fd/1"
 
 # Overwrite rake job_type to not include --silent flag
 job_type :rake,    "cd :path && :environment_variable=:environment bundle exec rake :task :output"

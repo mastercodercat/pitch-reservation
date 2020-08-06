@@ -54,7 +54,7 @@ rails_audit:
     - bundle exec bundle audit update
     - bundle exec bundle audit --ignore CVE-2016-7103
 
-build:rails:
+build:
   image: "docker:latest"
   variables:
     DOCKER_TLS_CERTDIR: ""
@@ -66,20 +66,5 @@ build:rails:
     - docker login -u "gitlab-ci-token" -p "$CI_BUILD_TOKEN" $CI_REGISTRY
     - docker build -f Dockerfile.prod --pull -t "$CI_REGISTRY_IMAGE:$IMAGE_TAG" .
     - docker push "$CI_REGISTRY_IMAGE:$IMAGE_TAG"
-  only:
-   - tags
-
-build:cron:
-  image: "docker:latest"
-  variables:
-    DOCKER_TLS_CERTDIR: ""
-  services:
-    - docker:dind
-  stage: build
-  script:
-    - export IMAGE_TAG=$(echo -en $CI_BUILD_REF_NAME | tr -c '[:alnum:]_.-' '-')
-    - docker login -u "gitlab-ci-token" -p "$CI_BUILD_TOKEN" $CI_REGISTRY
-    - docker build -f Dockerfile.cron --pull -t "${CI_REGISTRY_IMAGE}:${IMAGE_TAG}-cron" .
-    - docker push "${CI_REGISTRY_IMAGE}:${IMAGE_TAG}-cron"
   only:
    - tags
