@@ -22,6 +22,10 @@ COPY Gemfile* /usr/src/app/
 COPY Gemfile.lock* /usr/src/app/
 COPY package.json /usr/src/app/
 RUN gem install bundler --no-document 
+
+# https://northsail.io/articles/ruby-sassc-illegal-instruction
+RUN bundle config --local build.sassc --disable-march-tune-native
+
 RUN bundle install --without development test
 RUN yarn install
 
