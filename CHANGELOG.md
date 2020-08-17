@@ -31,6 +31,7 @@
 * Fixed image thumbnail loading ([#1822](https://gitlab.com/yale-sdmp/reservations/issues/1822)).
 * Fixed deploy with sassc workaround ([#1829](https://gitlab.com/yale-sdmp/reservations/issues/1829)).
 * Fixed asset compilation to account for RAILS_RELATIVE_URL_ROOT env variable ([#1830](https://gitlab.com/yale-sdmp/reservations/issues/1830)).
+* Fixed defailt ActionMailer email ([#1831](https://gitlab.com/yale-sdmp/reservations/issues/1831)).
 
 ### Security
 * Updated Nokogiri from 10.10.4 to 10.10.5 for CVE-2019-13117 ([#1792](https://gitlab.com/yale-sdmp/reservations/issues/1792)).
