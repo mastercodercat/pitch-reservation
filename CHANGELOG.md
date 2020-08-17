@@ -2,7 +2,7 @@
 * This file will be updated whenever a new release is put into production.
 * Any problems should be reported via the "report an issue" link in the footer of the application.
 
-## Unreleased
+## v7.0.0 - 2020-08-17
 ### Important
 * [See here for upgrade instructions](https://gitlab.com/yale-sdmp/reservations/-/wikis/Upgrade-Path-to-Reservations-7.0-and-Required-Action)*
 
@@ -30,6 +30,7 @@
 * Fixed image loading in Checkout view ([#1825](https://gitlab.com/yale-sdmp/reservations/issues/1825)).
 * Fixed image thumbnail loading ([#1822](https://gitlab.com/yale-sdmp/reservations/issues/1822)).
 * Fixed deploy with sassc workaround ([#1829](https://gitlab.com/yale-sdmp/reservations/issues/1829)).
+* Fixed asset compilation to account for RAILS_RELATIVE_URL_ROOT env variable ([#1830](https://gitlab.com/yale-sdmp/reservations/issues/1830)).
 
 ### Security
 * Updated Nokogiri from 10.10.4 to 10.10.5 for CVE-2019-13117 ([#1792](https://gitlab.com/yale-sdmp/reservations/issues/1792)).
