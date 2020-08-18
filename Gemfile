@@ -20,7 +20,7 @@ gem 'dotenv-rails', '~> 2.7.5', :require => 'dotenv/rails-now'
 # authentication / authorization
 gem 'devise', '~> 4.7.2'
 gem 'devise_cas_authenticatable', '~> 1.10.4'
-gem 'cancancan', '~> 2.0.0'
+gem 'cancancan', '~> 3.1.0'
 
 # scheduling
 gem 'whenever', '~> 0.9.7'
@@ -130,4 +130,3 @@ group :heroku do
   gem 'aws-sdk', '~> 3'
   gem 'rails_12factor', '~> 0.0.3'
 end
-

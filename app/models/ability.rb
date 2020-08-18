@@ -25,7 +25,7 @@ class Ability
   def superuser
     can :manage, :all
     can :access, :rails_admin
-    can :dashboard
+    can :manage, :dashboard
   end
 
   def admin

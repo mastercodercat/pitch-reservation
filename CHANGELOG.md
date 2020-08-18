@@ -21,6 +21,7 @@
 * Changed files to be handled with ActiveStorage rather than Paperclip ([#1796](https://gitlab.com/yale-sdmp/reservations/issues/1796)).
 * Changed language to be gender neutral ([#1809](https://gitlab.com/yale-sdmp/reservations/issues/1809)).
 * Changed Cron to be part of production Dockerfile container ([#1827](https://gitlab.com/yale-sdmp/reservations/issues/1827)).
+* Updated CanCanCan from 2.0.0 to 3.1.0 ([#1832](https://gitlab.com/yale-sdmp/reservations/issues/1832)).
 
 ### Fixed
 * Fixed deprecation warnings ([#1787](https://gitlab.com/yale-sdmp/reservations/issues/1787)).
