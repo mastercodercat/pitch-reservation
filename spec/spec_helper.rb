@@ -2,8 +2,6 @@
 
 require 'simplecov'
 SimpleCov.start
-# Rspec should submit the result to CodeClimate automatically with each Travis
-# CI build (repo token is encrypted in .travis.yml)
 
 require 'rubygems'
 

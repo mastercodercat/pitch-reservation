@@ -1,9 +1,5 @@
 # Welcome to Reservations
 
-[![Build Status](https://travis-ci.org/YaleSTC/reservations.svg?branch=master)](https://travis-ci.org/YaleSTC/reservations)
-[![Code Climate](https://codeclimate.com/github/YaleSTC/reservations/badges/gpa.svg)](https://codeclimate.com/github/YaleSTC/reservations)
-[![Test Coverage](https://codeclimate.com/github/YaleSTC/reservations/badges/coverage.svg)](https://codeclimate.com/github/YaleSTC/reservations)
-[![Dependency Status](https://gemnasium.com/YaleSTC/reservations.svg)](https://gemnasium.com/YaleSTC/reservations)
 [![Inline docs](http://inch-ci.org/github/yalestc/reservations.svg?branch=master&style=flat)](http://inch-ci.org/github/yalestc/reservations)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/YaleSTC/reservations/wiki/Heroku-Deployment-Guide)
@@ -25,7 +21,7 @@ There are two mains steps to setting up Reservations: setting up a deployment se
 
 ### Prerequisites
 You'll need the following to run Reservations:
-* [Ruby 2.3](http://www.ruby-lang.org/)
+* [Ruby 2.6.5](http://www.ruby-lang.org/)
 * [Bundler](http://bundler.io/)
 * a database server ([MySQL](http://www.mysql.com/) or any database supported by Rails)
 * [ImageMagick](http://www.imagemagick.org/script/index.php)

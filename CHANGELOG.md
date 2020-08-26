@@ -6,6 +6,9 @@
 ### Changed
 * Changed ActiveStorage to use VIPS on backend ([#1836](https://gitlab.com/yale-sdmp/reservations/issues/1836)).
 
+### Removed
+* Removed references to Travis CI ([#1835](https://gitlab.com/yale-sdmp/reservations/issues/1835)).
+
 ### Fixed
 * Fixed issue with favicon displaying ([#1833](https://gitlab.com/yale-sdmp/reservations/issues/1833)).
 

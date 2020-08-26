@@ -250,8 +250,7 @@ The code review process generally includes the following steps:
    and the work that was done.
 2. Checking out the branch and verifying that it resolves the issue / does
    what it claims to do.
-3. Running the tests and style checks (either manually or via
-   [Travis](https://travis-ci.org/YaleSTC/reservations)).
+3. Running the tests and style checks.
 4. Read through the diff to ensure that all changes make sense and that no
    potential bugs or inefficiencies are introduced.
 
