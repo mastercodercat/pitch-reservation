@@ -5,7 +5,7 @@
     <% if @equipment_model.photo.attached? %>
     <div class="image_box">
       <%= link_to "#image_modal", :"data-toggle" => 'modal' do %>
-        <%= image_tag @equipment_model.photo.variant(combine_options: {resize: "500x500", gravity: "Center"}), class: 'img-responsive' %>
+        <%= image_tag @equipment_model.photo.variant(resize_to_fill: [500, 500]), class: 'img-responsive' %>
       <% end %>
       <div id="image_modal" class="modal fade">
         <div class="modal-dialog">
@@ -15,7 +15,7 @@
               <h4 class="modal-title"><%= @equipment_model.name %></h4>
             </div>
             <div class="modal-body">
-              <%= image_tag @equipment_model.photo.variant(resize: "1000x1000"), class: 'img-responsive' %>
+              <%= image_tag @equipment_model.photo.variant(resize_to_limit: [1000, 1000]), class: 'img-responsive' %>
             </div>
           </div>
         </div>

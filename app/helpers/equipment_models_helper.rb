@@ -3,7 +3,7 @@
 module EquipmentModelsHelper
   def evaluate_img_presence(equipment_model)
     if equipment_model.photo.attached?
-      equipment_model.photo.variant(resize: '150x150')
+      equipment_model.photo.variant(resize_to_fill: [150, 150])
     else
       'no-image-260.gif'
     end

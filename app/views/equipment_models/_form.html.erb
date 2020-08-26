@@ -111,7 +111,7 @@
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-7">
 
-          <%= image_tag @equipment_model.photo.variant(resize: "260x180") %>
+          <%= image_tag @equipment_model.photo.variant(resize_to_fill: [260, 180]) %>
           <%= label_tag :clear_photo do %>
             <%= check_box_tag :clear_photo, nil, false %>
             Delete current photo?

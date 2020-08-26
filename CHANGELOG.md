@@ -3,6 +3,9 @@
 * Any problems should be reported via the "report an issue" link in the footer of the application.
 
 ## Unreleased
+### Changed
+* Changed ActiveStorage to use VIPS on backend ([#1836](https://gitlab.com/yale-sdmp/reservations/issues/1836)).
+
 ### Fixed
 * Fixed issue with favicon displaying ([#1833](https://gitlab.com/yale-sdmp/reservations/issues/1833)).
 

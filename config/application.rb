@@ -65,6 +65,9 @@ module Reservations
     # Load all helpers in all views
     config.action_controller.include_all_helpers = true
 
+    # Use Vips for processing variants.
+    config.active_storage.variant_processor = :vips
+
     # set up routing options for Reports (at a minimum)
     config.after_initialize do
       Rails.application.routes.default_url_options =
