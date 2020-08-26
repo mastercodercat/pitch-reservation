@@ -2,6 +2,10 @@
 * This file will be updated whenever a new release is put into production.
 * Any problems should be reported via the "report an issue" link in the footer of the application.
 
+## Unreleased
+### Fixed
+* Fixed issue with favicon displaying ([#1833](https://gitlab.com/yale-sdmp/reservations/issues/1833)).
+
 ## v7.0.0 - 2020-08-17
 ### Important
 * [See here for upgrade instructions](https://gitlab.com/yale-sdmp/reservations/-/wikis/Upgrade-Path-to-Reservations-7.0-and-Required-Action)*

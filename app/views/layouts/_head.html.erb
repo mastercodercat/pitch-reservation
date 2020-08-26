@@ -17,7 +17,7 @@
 
   <% if @app_configs # this is required in case the user attempts to view the site before running the app:setup rake task %>
     <% if @app_configs.favicon.present? %>
-      <%= favicon_link_tag @app_configs.favicon %>
+      <%= favicon_link_tag url_for(@app_configs.favicon) %>
     <% else %>
       <%# add versioning to refresh browsers with old default %>
       <%= favicon_link_tag 'favicon.ico?v=2' %>

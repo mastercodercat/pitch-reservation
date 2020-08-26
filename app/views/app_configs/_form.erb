@@ -18,7 +18,10 @@
       <%= f.file_field :favicon,
           accept: 'image/vnd.microsoft.icon',
           direct_upload: true %>
-      <%= f.label "Displayed in the tab and address bar of most browsers. Must be <em>*.ico</em> #{current_favicon_and_options}".html_safe %>
+      <%= f.label "Displayed in the tab and address bar of most browsers. Must be <em>*.ico</em>" %>
+      <br><br>
+      <strong>Current Favicon: </strong>
+      <%= image_tag current_favicon_and_options %>
     </div>
 
     <% if @app_config.favicon.present? %>
