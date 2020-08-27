@@ -68,6 +68,18 @@ module Reservations
     # Use Vips for processing variants.
     config.active_storage.variant_processor = :vips
 
+    # Overwrite default application response
+    config.action_dispatch.hosts_response_app = -> env do
+      request = ActionDispatch::Request.new(env)
+      Rails.logger.warn "Client attempted using blocked host: " + request.host
+      format = 'text/plain'
+      body = 'Unauthorized'
+      [403, {
+        "Content-Type" => "#{format}; charset=#{ActionDispatch::Response.default_charset}",
+        "Content-Length" => body.bytesize.to_s
+      }, [body]]
+    end
+
     # set up routing options for Reports (at a minimum)
     config.after_initialize do
       Rails.application.routes.default_url_options =
