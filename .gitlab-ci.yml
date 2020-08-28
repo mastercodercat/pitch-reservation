@@ -20,8 +20,13 @@ stages:
       - vendor/ruby
   
   before_script:
+    - apt-get update -q
+    - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+    - echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+    - curl -sL https://deb.nodesource.com/setup_10.x | bash - && apt-get install -y nodejs yarn
     - gem install bundler --no-document
     - bundle install -j $(nproc) --path vendor/ruby
+    - yarn install
     - cp config/database.gitlab.yml config/database.yml
 
 rails_test:
@@ -53,6 +58,12 @@ rails_audit:
   script: 
     - bundle exec bundle audit update
     - bundle exec bundle audit --ignore CVE-2016-7103
+
+yarn_audit:
+  <<: *rails_template
+    
+  script:
+    - yarn run improved-yarn-audit
 
 build:
   image: "docker:latest"
