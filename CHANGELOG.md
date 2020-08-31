@@ -2,7 +2,7 @@
 * This file will be updated whenever a new release is put into production.
 * Any problems should be reported via the "report an issue" link in the footer of the application.
 
-## Unreleased
+## v7.1.0 - 2020-08-31
 ### Changed
 * Changed ActiveStorage to use VIPS on backend ([#1836](https://gitlab.com/yale-sdmp/reservations/issues/1836)).
 * Changed Rails to not return default error page for bad host requests ([#1837](https://gitlab.com/yale-sdmp/reservations/issues/1837)).
