@@ -13,6 +13,7 @@
 
 ### Fixed
 * Fixed issue with favicon displaying ([#1833](https://gitlab.com/yale-sdmp/reservations/issues/1833)).
+* Fixed issue with building from Dockerfiles ([#1838](https://gitlab.com/yale-sdmp/reservations/issues/1838)).
 
 ## v7.0.0 - 2020-08-17
 ### Important
