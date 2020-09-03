@@ -22,14 +22,14 @@
   hint: "#{render :partial => 'shared/markdown_button'}".html_safe,
   input_html: { rows: 10 } %>
 
-  <%= f.input :late_fee, wrapper: :horizontal_input_group do %>
+  <%= f.input :late_fee, wrapper: :horizontal_input_group, required: true do %>
     <%= content_tag :span, "$", class: "input-group-addon" %>
     <%= f.input_field :late_fee,
       class: 'form-control', value: number_with_precision(f.object.late_fee,
       precision: 2), type: 'number', step: 'any' %>
   <% end %>
 
-  <%= f.input :replacement_fee, wrapper: :horizontal_input_group do %>
+  <%= f.input :replacement_fee, wrapper: :horizontal_input_group, required: true do %>
     <%= content_tag :span, "$", class: "input-group-addon" %>
     <%= f.input_field :replacement_fee,
       class: 'form-control', value: number_with_precision(f.object.replacement_fee,

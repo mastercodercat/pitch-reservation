@@ -7,6 +7,7 @@
 * Changed ActiveStorage to use VIPS on backend ([#1836](https://gitlab.com/yale-sdmp/reservations/issues/1836)).
 * Changed Rails to not return default error page for bad host requests ([#1837](https://gitlab.com/yale-sdmp/reservations/issues/1837)).
 * Removed eslint and added yarn-improved-audit ([#1826](https://gitlab.com/yale-sdmp/reservations/issues/1826)).
+* Changed late fee and replace fee to be required in new equipment model form ([#1840](https://gitlab.com/yale-sdmp/reservations/issues/1840)).
 
 ### Removed
 * Removed references to Travis CI ([#1835](https://gitlab.com/yale-sdmp/reservations/issues/1835)).
