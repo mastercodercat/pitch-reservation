@@ -1241,7 +1241,7 @@ GEM
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
-    rails_admin (2.0.0)
+    rails_admin (2.0.2)
       activemodel-serializers-xml (>= 1.0)
       builder (~> 3.1)
       haml (>= 4.0, < 6)
@@ -1270,7 +1270,7 @@ GEM
       ffi (~> 1.0)
     redcarpet (3.4.0)
     ref (2.0.0)
-    remotipart (1.4.3)
+    remotipart (1.4.4)
     request_store (1.4.1)
       rack (>= 1.4)
     responders (3.0.1)
@@ -1453,7 +1453,7 @@ DEPENDENCIES
   rails-controller-testing (~> 1.0.3)
   rails4-autocomplete (~> 1.1.1)
   rails_12factor (~> 0.0.3)
-  rails_admin (~> 2.0.0)
+  rails_admin (~> 2.0.2)
   rake (~> 12.3.3)
   record_tag_helper (~> 1.0.0)!
   redcarpet (~> 3.4.0)

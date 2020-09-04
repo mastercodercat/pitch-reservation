@@ -2,6 +2,10 @@
 * This file will be updated whenever a new release is put into production.
 * Any problems should be reported via the "report an issue" link in the footer of the application.
 
+## v7.1.1 - 2020-09-04
+### Security
+* Updated rails_admin from 2.0.0 to 2.0.2 for undisclosed xss vulnerability ([#1841](https://gitlab.com/yale-sdmp/reservations/issues/1841)).
+
 ## v7.1.0 - 2020-08-31
 ### Changed
 * Changed ActiveStorage to use VIPS on backend ([#1836](https://gitlab.com/yale-sdmp/reservations/issues/1836)).
