@@ -3,6 +3,9 @@
 * Any problems should be reported via the "report an issue" link in the footer of the application.
 
 ## Unreleased
+### Added
+* Added host header protection ([#1842](https://gitlab.com/yale-sdmp/reservations/issues/1842)).
+
 ### Changed
 * Changed `force_ssl` to true in production([#1844](https://gitlab.com/yale-sdmp/reservations/issues/1844)).
 
