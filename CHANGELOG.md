@@ -2,6 +2,10 @@
 * This file will be updated whenever a new release is put into production.
 * Any problems should be reported via the "report an issue" link in the footer of the application.
 
+## Unreleased
+### Security
+* Updated rails from 6.0.3.2 to 6.0.3.3 for CVE-2020-15169 ([#1843](https://gitlab.com/yale-sdmp/reservations/issues/1843)).
+
 ## v7.1.1 - 2020-09-04
 ### Security
 * Updated rails_admin from 2.0.0 to 2.0.2 for undisclosed xss vulnerability ([#1841](https://gitlab.com/yale-sdmp/reservations/issues/1841)).
