@@ -3,6 +3,9 @@
 * Any problems should be reported via the "report an issue" link in the footer of the application.
 
 ## Unreleased
+### Changed
+* Changed `force_ssl` to true in production([#1844](https://gitlab.com/yale-sdmp/reservations/issues/1844)).
+
 ### Security
 * Updated rails from 6.0.3.2 to 6.0.3.3 for CVE-2020-15169 ([#1843](https://gitlab.com/yale-sdmp/reservations/issues/1843)).
 
