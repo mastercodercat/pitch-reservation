@@ -10,7 +10,7 @@
 * Changed `force_ssl` to true in production([#1844](https://gitlab.com/yale-sdmp/reservations/issues/1844)).
 
 ### Security
-* Updated rails from 6.0.3.2 to 6.0.3.3 for CVE-2020-15169 ([#1843](https://gitlab.com/yale-sdmp/reservations/issues/1843)).
+* Updated rails from 6.0.3.2 to 6.0.3.4 ([#1843](https://gitlab.com/yale-sdmp/reservations/issues/1843)).
 
 ## v7.1.1 - 2020-09-04
 ### Security
