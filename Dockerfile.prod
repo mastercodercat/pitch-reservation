@@ -41,6 +41,9 @@ COPY entrypoint-prod.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint-prod.sh
 ENTRYPOINT ["entrypoint-prod.sh"]
 
+# Precompile assets
+RUN SECRET_KEY_BASE=tempkey RAILS_ENV=production rails assets:precompile
+
 # Expose rails
 EXPOSE 3000
 
