@@ -7,7 +7,8 @@
 * Added host header protection ([#1842](https://gitlab.com/yale-sdmp/reservations/issues/1842)).
 
 ### Changed
-* Changed `force_ssl` to true in production([#1844](https://gitlab.com/yale-sdmp/reservations/issues/1844)).
+* Changed `force_ssl` to true in production ([#1844](https://gitlab.com/yale-sdmp/reservations/issues/1844)).
+* Changed Daily tasks to run at 10am UTC ([#1846](https://gitlab.com/yale-sdmp/reservations/issues/1846)).
 
 ### Security
 * Updated rails from 6.0.3.2 to 6.0.3.4 ([#1843](https://gitlab.com/yale-sdmp/reservations/issues/1843)).

@@ -39,7 +39,7 @@ job_type :rake,    "cd :path && :environment_variable=:environment bundle exec r
 set :environment, ENV["RAILS_ENV"]
 
 # every night around 5 AM EST
-every :day, at: '12:00am' do
+every :day, at: '10:00am' do
   rake 'run_daily_tasks'
 end
 
