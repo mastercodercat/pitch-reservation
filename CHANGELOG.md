@@ -12,6 +12,10 @@
 * Moved asset pre-compilation from Entrypoint to Dockerfile ([#1847](https://gitlab.com/yale-sdmp/reservations/issues/1847)).
 * Changed Ruby to use Jemalloc ([#1851](https://gitlab.com/yale-sdmp/reservations/issues/1851)).
 
+### Fixed
+* Fixed asset precompilation in Dockerfile.prod  ([#1849](https://gitlab.com/yale-sdmp/reservations/issues/1849)).
+* Fixed authentication initializer  ([#1850](https://gitlab.com/yale-sdmp/reservations/issues/1850)).
+ 
 ### Security
 * Updated rails from 6.0.3.2 to 6.0.3.4 ([#1843](https://gitlab.com/yale-sdmp/reservations/issues/1843)).
 

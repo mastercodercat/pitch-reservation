@@ -15,11 +15,11 @@ unless ENV['SKIP_AUTH_INIT'] || !User.table_exists? ||
       raise 'There are users missing their CAS logins, you cannot use CAS '\
         'authentication.'
     else
-      User.all.each { 'username = cas_login' }
+      User.all.each { |u| u.update(username: u.cas_login) }
     end
   # if we want to use password authentication all users can reset their
   # passwords so it doesn't matter if they already have them or not
   elsif ENV['CAS_AUTH'].nil? && user && (user.username != user.email)
-    User.all.each { 'username = email' }
+    User.all.each { |u| u.update(username: u.email) }
   end
 end
