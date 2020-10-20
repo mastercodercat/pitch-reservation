@@ -7,6 +7,7 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 
 # Install dependencies and remove unneeded packages/files
 RUN apt-get update -qq && apt-get install -y --no-install-recommends cron \
+                                                                     libjemalloc2 \
                                                                      nodejs \
                                                                      git \
                                                                      unzip \
@@ -16,6 +17,10 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends cron \
                                                                      apt-transport-https \
                                                                      libvips \
                                                                      yarn
+
+# Configure Ruby to use Jemalloc
+ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
+ENV MALLOC_ARENA_MAX=2
 
 # Install packages
 WORKDIR /usr/src/app

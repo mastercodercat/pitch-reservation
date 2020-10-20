@@ -6,11 +6,16 @@ RUN echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/so
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-RUN apt-get update -qq && apt-get install -y google-chrome-stable \
+RUN apt-get update -qq && apt-get install -y libjemalloc2 \
+                                             google-chrome-stable \
                                              nodejs \
                                              postgresql-client \
                                              libvips \
-                                             yarn 
+                                             yarn
+
+# Configure Ruby to use Jemalloc
+ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
+ENV MALLOC_ARENA_MAX=2
 
 # Install Gems before adding app files for better caching
 COPY Gemfile* /tmp/

@@ -10,6 +10,7 @@
 * Changed `force_ssl` to true in production ([#1844](https://gitlab.com/yale-sdmp/reservations/issues/1844)).
 * Changed Daily tasks to run at 10am UTC ([#1846](https://gitlab.com/yale-sdmp/reservations/issues/1846)).
 * Moved asset pre-compilation from Entrypoint to Dockerfile ([#1847](https://gitlab.com/yale-sdmp/reservations/issues/1847)).
+* Changed Ruby to use Jemalloc ([#1851](https://gitlab.com/yale-sdmp/reservations/issues/1851)).
 
 ### Security
 * Updated rails from 6.0.3.2 to 6.0.3.4 ([#1843](https://gitlab.com/yale-sdmp/reservations/issues/1843)).
