@@ -14,6 +14,7 @@
 ### Fixed
 * Fixed asset precompilation in Dockerfile.prod  ([#1849](https://gitlab.com/yale-sdmp/reservations/issues/1849)).
 * Fixed authentication initializer  ([#1850](https://gitlab.com/yale-sdmp/reservations/issues/1850)).
+* Fixed issue with equipment model form crashing ([#1854](https://gitlab.com/yale-sdmp/reservations/issues/1854)).
  
 ### Security
 * Updated rails from 6.0.3.2 to 6.0.3.4 ([#1843](https://gitlab.com/yale-sdmp/reservations/issues/1843)).

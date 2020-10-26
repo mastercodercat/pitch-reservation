@@ -130,7 +130,7 @@
     <% if @equipment_model.documentation.attached? %>
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-7">
-          <% if !@equipment_model.documentation.nil? %>
+          <% if !@equipment_model.documentation_blob.nil? %>
             <h4>
               <%= (link_to @equipment_model.documentation_blob.filename,
                    rails_blob_url(@equipment_model.documentation), target: "_blank") %>
