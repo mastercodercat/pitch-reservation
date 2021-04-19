@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.6.5' # Version in .ruby-version must match
 
 # standard gems
-gem 'rails', '~> 6.0.3.4'
+gem 'rails', '~> 6.0.3.6'
 gem 'mysql2', '~> 0.5.2'
 gem 'rake', '~> 12.3.3'
 gem 'jbuilder', '~> 2.9.1'
@@ -55,7 +55,7 @@ gem 'inline_svg', '~> 1.2.1'
 # forms / formatting
 gem 'simple_form', '~> 5.0.1'
 gem 'cocoon', '~> 1.2.10'
-gem 'redcarpet', '~> 3.4.0'
+gem 'redcarpet', '~> 3.5.1'
 
 # iCalendar export
 gem 'icalendar', '~> 2.4.1'

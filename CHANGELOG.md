@@ -2,6 +2,10 @@
 * This file will be updated whenever a new release is put into production.
 * Any problems should be reported via the "report an issue" link in the footer of the application.
 
+## Unreleased
+### Changed
+Update to Rails 6.0.3.6 ([#1856](https://gitlab.com/yale-sdmp/reservations/-/issues/1856)).
+
 ## v7.1.2 - 2020-10-19
 ### Added
 * Added host header protection ([#1842](https://gitlab.com/yale-sdmp/reservations/issues/1842)).
