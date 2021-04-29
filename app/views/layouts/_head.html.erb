@@ -1,4 +1,7 @@
 <head>
+  <% if ENV['GOOGLE_VERIFICATION_STRING'].present? %>
+    <%= "<meta name='google-site-verification' content=#{ENV['GOOGLE_VERIFICATION_STRING']} />".html_safe %>
+  <% end %>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <%= csrf_meta_tag %>
   <% unless @app_configs.nil? || @app_configs.site_title.nil?%>

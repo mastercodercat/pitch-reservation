@@ -3,6 +3,9 @@
 * Any problems should be reported via the "report an issue" link in the footer of the application.
 
 ## Unreleased
+### Added
+Added optional Google Search Verification tag([#1856](https://gitlab.com/yale-sdmp/reservations/-/issues/1856)).
+
 ### Changed
 Update to Rails 6.0.3.6 ([#1856](https://gitlab.com/yale-sdmp/reservations/-/issues/1856)).
 
