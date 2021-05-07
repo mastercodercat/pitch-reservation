@@ -9,6 +9,9 @@ Added optional Google Search Verification tag([#1856](https://gitlab.com/yale-sd
 ### Changed
 Update to Rails 6.0.3.6 ([#1856](https://gitlab.com/yale-sdmp/reservations/-/issues/1856)).
 
+### Security
+* Updated rails from 6.0.3.6 to 6.0.3.7 ([#1858](https://gitlab.com/yale-sdmp/reservations/issues/1858)).
+
 ## v7.1.2 - 2020-10-19
 ### Added
 * Added host header protection ([#1842](https://gitlab.com/yale-sdmp/reservations/issues/1842)).
