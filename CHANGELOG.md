@@ -11,6 +11,8 @@ Update to Rails 6.0.3.6 ([#1856](https://gitlab.com/yale-sdmp/reservations/-/iss
 
 ### Security
 * Updated rails from 6.0.3.6 to 6.0.3.7 ([#1858](https://gitlab.com/yale-sdmp/reservations/issues/1858)).
+* Updated puma from 4.3.7 to 4.3.8 ([#1859](https://gitlab.com/yale-sdmp/reservations/issues/1859)).
+* Updated nokogiri from 1.11.3 to 1.11.5 ([#1859](https://gitlab.com/yale-sdmp/reservations/issues/1859)).
 
 ## v7.1.2 - 2020-10-19
 ### Added
