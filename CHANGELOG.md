@@ -2,7 +2,7 @@
 * This file will be updated whenever a new release is put into production.
 * Any problems should be reported via the "report an issue" link in the footer of the application.
 
-## Unreleased
+## v7.2.0 - 2021-05-25
 ### Added
 Added optional Google Search Verification tag([#1856](https://gitlab.com/yale-sdmp/reservations/-/issues/1856)).
 
